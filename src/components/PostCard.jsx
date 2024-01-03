@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import postService from "../appwrite/PostService";
 
-function PostCard({ $postId, title, featuredImage }) {
+function PostCard({ $id, title, featuredImage }) {
   return (
     // Link - The full address isn't required; it will take the path from here.
-    // $id - This $ is not significant; it's just a syntax of Appwrite, unrelated to React or JavaScript.
+    // $id (postId) - This $ is not significant; it's just a syntax of Appwrite, unrelated to React or JavaScript.
     <Link
-      to={`/post/${$postId}`}
+      to={`/post/${$id}`}
       className="block w-full bg-gray-100 rounded-xl p-4"
     >
       {/* Figure element containing an image and a caption */}

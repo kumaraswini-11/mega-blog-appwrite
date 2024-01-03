@@ -23,9 +23,9 @@ function Header() {
     <header className="py-3 shadow bg-gray-500">
       <Container>
         {/* Site title */}
-        <h1 className="text-xl font-bold text-white">
+        {/* <h1 className="text-xl font-bold text-white">
           Mega Blog Project with Appwrite Open Source.
-        </h1>
+        </h1> */}
         {/* Navigation section with logo, navigation items, and logout button */}
         <nav className="flex">
           {/* Logo with a link to the home page */}

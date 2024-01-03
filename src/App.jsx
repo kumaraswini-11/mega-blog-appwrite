@@ -37,7 +37,7 @@ function App() {
             <Header />
             <main>
               {/* Rendering child components based on the route */}
-              {/* <Outlet /> */}
+              <Outlet />
             </main>
             {/* Rendering Footer component */}
             <Footer />
