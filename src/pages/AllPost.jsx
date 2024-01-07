@@ -24,7 +24,7 @@ function AllPost() {
           {posts.map((post) => (
             <div key={post.$id} className="p-2 w-1/2">
               {/* Rendering PostCard component with the current post data */}
-              <PostCard post={post} />
+              <PostCard {...post} />
             </div>
           ))}
         </div>

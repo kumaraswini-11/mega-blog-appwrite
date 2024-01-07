@@ -108,8 +108,8 @@ export class PostService {
   async listPosts(
     queries = [
       Query.equal("status", "active"),
-      Query.limit(25),
-      Query.offset(25),
+      // Query.limit(25),
+      // Query.offset(25),
     ]
   ) {
     try {

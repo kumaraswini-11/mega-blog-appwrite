@@ -45,7 +45,7 @@ class AuthService {
   }
 
   // Method to create a new user account
-  async createAccount({ email = "", password = "", name = "" }) {
+  async createAccount({ email, password, name }) {
     try {
       // Create a new user account using Appwrite API
       const userAccount = await this.#account.create(
@@ -87,22 +87,15 @@ class AuthService {
       // Retrieve current user details using Appwrite API
       return await this.#account.get();
     } catch (error) {
-      if (error instanceof AppwriteException) {
-        // Handle Appwrite-specific exception (e.g., log the error, show a user-friendly message)
-        console.error("AppwriteException:", error);
-      } else {
-        // Handle other types of errors
-        console.error("AuthService::getCurrentUser::error", error);
-      }
+      // if (error instanceof AppwriteException) {
+      //   // Handle Appwrite-specific exception (e.g., log the error, show a user-friendly message)
+      //   console.error("AppwriteException:", error);
+      // }
 
-      // Throw or handle the error based on your application's requirements
+      // Log and throw any errors that occur during retrieval of user details
+      console.error("AuthService::getCurrentUser::error", error);
       throw error;
     }
-    // } catch (error) {
-    //   // Log and throw any errors that occur during retrieval of user details
-    //   console.error("AuthService::getCurrentUser::error", error);
-    //   throw error;
-    //   }
   }
 
   // Method to log out the current user

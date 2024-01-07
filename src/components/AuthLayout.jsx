@@ -29,7 +29,7 @@ export default function ProtectedLayout({
 
     // Set loading to false once the authentication check is complete
     setIsLoading(false);
-  }, [navigate, isAuthenticated, requireAuthentication]);
+  }, [isAuthenticated, navigate, requireAuthentication]);
 
   // JSX structure for the ProtectedLayout component
   return isLoading ? <h1>Loading...</h1> : <>{children}</>;

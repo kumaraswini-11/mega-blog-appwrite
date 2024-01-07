@@ -13,6 +13,7 @@ function PostCard({ $id, title, featuredImage }) {
       {/* Figure element containing an image and a caption */}
       <figure className="mb-4">
         <img
+          //src={postService.getFilePreview(featuredImage)}
           src={postService.getFilePreview(featuredImage)}
           alt={`Featured image for post: ${title}`}
           className="w-full h-auto rounded-xl"
@@ -27,3 +28,18 @@ function PostCard({ $id, title, featuredImage }) {
 }
 
 export default PostCard;
+
+/*
+const urlPromise = postService.getFilePreview(featuredImage);
+let modifiedUrl = "";
+urlPromise
+  .then((url) => {
+    console.log("Resolved URL:", url); // Log the resolved URL
+    const baseUrl = `${url.origin}${url.pathname.split("/files")[0]}`;
+    modifiedUrl = `${baseUrl}/files/${featuredImage}/view/?project=6586bf1e78d7b6c5f012`;
+    console.log(modifiedUrl);
+  })
+  .catch((error) => {
+    console.error("Error resolving URL Promise:", error);
+  });
+*/

@@ -37,9 +37,9 @@ const router = createBrowserRouter([
         path: "/signup",
         element: (
           // Layout for the signup page without authentication
-          <AuthLayout authentication={false}>
-            <Signup />
-          </AuthLayout>
+          // <AuthLayout authentication={false}> -- by dafault it's navigating to login
+          <Signup />
+          // </AuthLayout>
         ),
       },
       {
@@ -75,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "/post/:slug",
         element: <Post />, // Post page component
+      },
+      {
+        path: "/*",
+        element: <div>Page not found !</div>,
       },
     ],
   },

@@ -12,7 +12,7 @@ function Signup() {
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
 
-  const signup = async (data) => {
+  const create = async (data) => {
     setError("");
 
     try {
