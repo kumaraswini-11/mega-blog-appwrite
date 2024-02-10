@@ -1,6 +1,7 @@
 # MegaBlog
 
 A mega blog project using React, Vite, and Redux Toolkit, integrating the open-source backend solution, Appwrite. This project adheres to production standards, offering a dynamic and responsive user experience.
+Built high-performance blog app with React, Vite, and Redux Toolkit, integrating Appwrite backend for production-ready, dynamic user experience.
 
 ## Features
 
