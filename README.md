@@ -15,7 +15,7 @@ This app harnesses the power of React for frontend magic, Redux for streamlined 
 - **User Profiles:** Users can create profiles, providing personal information and display pictures.
 - **Blog Creation and Editing:** Easily create new blog posts, edit existing ones, and delete your own posts.
 - **Rich Text Editor:** Integrated with a powerful editor for formatting blog content, including text styling, image insertion, and more.
-- **Image Upload:** Users can upload images to accompany their blog posts.
+- **Image Upload:** Users can effortlessly add images to their blog posts, leveraging Cloudinary for efficient storage.
 - **Responsive Design:** Utilizing a mobile-first approach ensures compatibility across various devices.
 
 ## Usage
